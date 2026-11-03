@@ -1,3 +1,5 @@
+/** @fileoverview Provides the reusable modal dialog, dismissal behavior, and scroll locking. */
+
 import { useEffect, type ReactNode } from 'react'
 import { Icon } from './Icon'
 

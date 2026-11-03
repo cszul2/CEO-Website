@@ -1,3 +1,5 @@
+/** @fileoverview Defines linting rules for TypeScript, React hooks, and fast-refresh safety. */
+
 import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'

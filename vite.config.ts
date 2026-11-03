@@ -1,3 +1,5 @@
+/** @fileoverview Configures the React build, development server, and local API proxy. */
+
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 

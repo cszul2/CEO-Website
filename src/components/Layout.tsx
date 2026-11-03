@@ -1,3 +1,5 @@
+/** @fileoverview Composes persistent navigation, routed content, and global overlay controls. */
+
 import { useEffect, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { AskCeoForm } from './AskCeoForm'

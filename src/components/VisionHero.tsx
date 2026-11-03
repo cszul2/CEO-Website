@@ -1,3 +1,5 @@
+/** @fileoverview Implements the home-page vision hero and its CEO message and video dialogs. */
+
 import { useState } from 'react'
 import { siteContent } from '../data/content'
 import { Icon } from './Icon'

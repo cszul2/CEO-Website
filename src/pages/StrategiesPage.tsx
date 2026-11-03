@@ -1,3 +1,5 @@
+/** @fileoverview Presents enterprise strategy pillars and the outcomes they connect. */
+
 import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'
 import { strategies } from '../data/content'

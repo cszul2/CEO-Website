@@ -1,3 +1,5 @@
+"""Define the FastAPI service for policy discovery, documents, and health checks."""
+
 from __future__ import annotations
 
 from contextlib import asynccontextmanager

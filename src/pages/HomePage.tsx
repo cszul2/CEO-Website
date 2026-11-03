@@ -1,3 +1,5 @@
+/** @fileoverview Assembles the home page's vision, navigation cards, and responsive update feeds. */
+
 import { HomeCards } from '../components/HomeCards'
 import { UpdatesPanel } from '../components/UpdatesPanel'
 import { VisionHero } from '../components/VisionHero'

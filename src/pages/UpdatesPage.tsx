@@ -1,3 +1,5 @@
+/** @fileoverview Defines the filterable and expandable leadership communications feed. */
+
 import { useState } from 'react'
 import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader } from '../components/PageHeader'

@@ -1,3 +1,5 @@
+"""Create, seed, and query the SQLite data store used by the policy API."""
+
 from __future__ import annotations
 
 import os

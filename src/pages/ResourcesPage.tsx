@@ -1,3 +1,5 @@
+/** @fileoverview Defines the category-filterable collection of shared company resources. */
+
 import { useState } from 'react'
 import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader } from '../components/PageHeader'

@@ -1,3 +1,5 @@
+/** @fileoverview Defines the events page and its session-local event-saving interaction. */
+
 import { useState } from 'react'
 import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'

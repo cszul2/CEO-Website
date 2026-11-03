@@ -1,3 +1,5 @@
+/** @fileoverview Starts and coordinates the local policy API and Vite development servers. */
+
 import { spawn } from 'node:child_process'
 import { existsSync } from 'node:fs'
 import { resolve } from 'node:path'

@@ -1,3 +1,5 @@
+/** @fileoverview Defines the reusable Office of the CEO brand mark and wordmark. */
+
 /** Renders the Office of the CEO brand mark, optionally without its wordmark. */
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (

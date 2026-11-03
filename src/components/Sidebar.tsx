@@ -1,3 +1,5 @@
+/** @fileoverview Renders primary navigation for persistent desktop and dismissible mobile contexts. */
+
 import { NavLink } from 'react-router-dom'
 import { navigation } from '../data/content'
 import { Icon } from './Icon'

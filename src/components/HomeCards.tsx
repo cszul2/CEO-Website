@@ -1,3 +1,5 @@
+/** @fileoverview Renders the home page's featured destination cards from shared content data. */
+
 import { Link } from 'react-router-dom'
 import { homeCards } from '../data/content'
 import { Icon } from './Icon'

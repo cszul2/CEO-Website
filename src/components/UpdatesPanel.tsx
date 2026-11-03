@@ -1,3 +1,5 @@
+/** @fileoverview Presents a compact feed of the latest leadership updates. */
+
 import { Link } from 'react-router-dom'
 import { updates } from '../data/content'
 import { Icon } from './Icon'

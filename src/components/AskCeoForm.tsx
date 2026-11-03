@@ -1,3 +1,5 @@
+/** @fileoverview Implements the prototype CEO-question form and local confirmation state. */
+
 import { useState, type FormEvent } from 'react'
 import { Icon } from './Icon'
 

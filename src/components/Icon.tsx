@@ -1,3 +1,5 @@
+/** @fileoverview Maps content icon names to accessible Lucide icon components. */
+
 import {
   ArrowRight,
   Bell,

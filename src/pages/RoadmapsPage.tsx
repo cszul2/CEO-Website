@@ -1,3 +1,5 @@
+/** @fileoverview Presents the enterprise roadmap as a sequence of strategic phases. */
+
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'
 import { roadmap } from '../data/content'
 

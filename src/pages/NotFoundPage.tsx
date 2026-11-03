@@ -1,3 +1,5 @@
+/** @fileoverview Provides the fallback page and recovery link for unmatched routes. */
+
 import { Link } from 'react-router-dom'
 import { Icon } from '../components/Icon'
 

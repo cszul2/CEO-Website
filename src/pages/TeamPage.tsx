@@ -1,3 +1,5 @@
+/** @fileoverview Defines the sample roster page for the Office of the CEO team. */
+
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'
 import { team } from '../data/content'
 

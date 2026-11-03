@@ -1,3 +1,5 @@
+/** @fileoverview Defines the application's route hierarchy and shared layout boundary. */
+
 import { Route, Routes } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { AskPage } from './pages/AskPage'

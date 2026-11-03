@@ -1,3 +1,5 @@
+/** @fileoverview Configures Tailwind source discovery and project-specific theme extensions. */
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],

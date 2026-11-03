@@ -1,3 +1,5 @@
+/** @fileoverview Provides the global header, content search, notifications, and mobile-menu trigger. */
+
 import { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { searchIndex } from '../data/content'

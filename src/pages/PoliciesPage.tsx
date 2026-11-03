@@ -1,3 +1,5 @@
+/** @fileoverview Fetches, filters, and presents policy records from the local policy API. */
+
 import { useEffect, useState } from 'react'
 import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader } from '../components/PageHeader'

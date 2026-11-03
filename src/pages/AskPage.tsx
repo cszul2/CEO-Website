@@ -1,3 +1,5 @@
+/** @fileoverview Defines the employee-question page and its supporting FAQ content. */
+
 import { AskCeoForm } from '../components/AskCeoForm'
 import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'

@@ -1,3 +1,5 @@
+/** @fileoverview Defines the portfolio view of priority projects and illustrative progress. */
+
 import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'
 import { projects } from '../data/content'

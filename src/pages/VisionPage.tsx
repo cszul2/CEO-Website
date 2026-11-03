@@ -1,3 +1,5 @@
+/** @fileoverview Presents the company's long-term vision, principles, and direction statements. */
+
 import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'
 import { principles, siteContent } from '../data/content'

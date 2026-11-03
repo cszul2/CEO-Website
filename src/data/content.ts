@@ -1,3 +1,5 @@
+/** @fileoverview Centralizes the prototype's navigation, editorial content, and search data. */
+
 /** Supported accent names used to select a component's visual treatment. */
 export type Accent = 'violet' | 'blue' | 'teal' | 'green' | 'amber' | 'rose'
 

@@ -1,3 +1,5 @@
+/** @fileoverview Supplies shared layout and heading primitives for interior pages. */
+
 import type { ReactNode } from 'react'
 
 interface PageHeaderProps {
