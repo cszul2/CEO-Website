@@ -3,8 +3,10 @@ import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader } from '../components/PageHeader'
 import { updates } from '../data/content'
 
+/** Update categories selectable in the leadership feed. */
 const types = ['All', 'CEO Update', 'Strategy', 'Policy', 'Announcement']
 
+/** Filters leadership updates and expands one detail panel at a time. */
 export function UpdatesPage() {
   const [type, setType] = useState('All')
   const [expandedId, setExpandedId] = useState<string | null>(null)

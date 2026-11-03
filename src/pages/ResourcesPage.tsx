@@ -3,6 +3,7 @@ import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader } from '../components/PageHeader'
 import { resources } from '../data/content'
 
+/** Filters shared resources by category and presents the matching cards. */
 export function ResourcesPage() {
   const categories = ['All', ...Array.from(new Set(resources.map((resource) => resource.category)))]
   const [category, setCategory] = useState('All')

@@ -13,6 +13,7 @@ import { TeamPage } from './pages/TeamPage'
 import { UpdatesPage } from './pages/UpdatesPage'
 import { VisionPage } from './pages/VisionPage'
 
+/** Defines the application routes inside the shared page layout. */
 export default function App() {
   return (
     <Routes>

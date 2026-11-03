@@ -1,3 +1,4 @@
+/** Renders the Office of the CEO brand mark, optionally without its wordmark. */
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (
     <div className="flex min-w-0 items-center gap-3">

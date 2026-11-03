@@ -8,6 +8,7 @@ interface HeaderProps {
   onMenuClick: () => void
 }
 
+/** Provides the global search, notifications, and mobile-menu control. */
 export function Header({ onMenuClick }: HeaderProps) {
   const [query, setQuery] = useState('')
   const [searchOpen, setSearchOpen] = useState(false)
@@ -22,12 +23,14 @@ export function Header({ onMenuClick }: HeaderProps) {
     : []
 
   useEffect(() => {
+    // Reset transient controls after navigation so they cannot obscure the new page.
     setSearchOpen(false)
     setQuery('')
     setNoticeOpen(false)
   }, [location.pathname])
 
   useEffect(() => {
+    // Close the search panel when a pointer event occurs outside its container.
     const handleOutside = (event: MouseEvent) => {
       if (searchRef.current && !searchRef.current.contains(event.target as Node)) setSearchOpen(false)
     }

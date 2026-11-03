@@ -3,6 +3,7 @@ import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'
 import { faqs } from '../data/content'
 
+/** Combines the prototype CEO-question form with its supporting FAQ. */
 export function AskPage() {
   return (
     <InteriorLayout>

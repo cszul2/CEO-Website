@@ -2,6 +2,7 @@ import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'
 import { principles, siteContent } from '../data/content'
 
+/** Presents the long-term vision, principles, and complementary direction statements. */
 export function VisionPage() {
   return (
     <InteriorLayout>

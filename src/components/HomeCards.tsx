@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { homeCards } from '../data/content'
 import { Icon } from './Icon'
 
+/** Displays the featured navigation cards on the home page. */
 export function HomeCards() {
   return (
     <section aria-labelledby="explore-title">

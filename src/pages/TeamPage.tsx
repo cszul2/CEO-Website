@@ -1,6 +1,7 @@
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'
 import { team } from '../data/content'
 
+/** Displays the sample Office of the CEO team roster. */
 export function TeamPage() {
   return (
     <InteriorLayout>

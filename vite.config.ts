@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+/** Configures the React development server and forwards API requests to the local backend. */
 export default defineConfig({
   plugins: [react()],
   server: {

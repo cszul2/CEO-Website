@@ -32,6 +32,7 @@ import {
   type LucideIcon,
 } from 'lucide-react'
 
+/** Maps content-friendly icon names to their Lucide implementations. */
 const icons: Record<string, LucideIcon> = {
   arrow: ArrowRight,
   bell: Bell,
@@ -71,6 +72,7 @@ interface IconProps {
   strokeWidth?: number
 }
 
+/** Renders a named decorative icon, using Sparkles when the name is unknown. */
 export function Icon({ name, className, strokeWidth = 1.8 }: IconProps) {
   const Component = icons[name] ?? Sparkles
   return <Component className={className} strokeWidth={strokeWidth} aria-hidden="true" />

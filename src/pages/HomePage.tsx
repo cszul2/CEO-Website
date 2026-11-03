@@ -2,6 +2,7 @@ import { HomeCards } from '../components/HomeCards'
 import { UpdatesPanel } from '../components/UpdatesPanel'
 import { VisionHero } from '../components/VisionHero'
 
+/** Assembles the vision hero, featured links, and responsive update panels. */
 export function HomePage() {
   return (
     <div className="home-layout">

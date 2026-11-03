@@ -6,12 +6,14 @@ import { Icon } from './Icon'
 import { Modal } from './Modal'
 import { Sidebar } from './Sidebar'
 
+/** Supplies persistent navigation and overlays around each routed page. */
 export function Layout() {
   const [navOpen, setNavOpen] = useState(false)
   const [askOpen, setAskOpen] = useState(false)
   const location = useLocation()
 
   useEffect(() => {
+    // Return visitors to the top when a route changes.
     setNavOpen(false)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [location.pathname])

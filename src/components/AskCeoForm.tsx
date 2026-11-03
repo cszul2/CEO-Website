@@ -1,6 +1,12 @@
 import { useState, type FormEvent } from 'react'
 import { Icon } from './Icon'
 
+/**
+ * Renders the prototype question form and its local submission confirmation.
+ *
+ * @param compact - Reduces the question field height for modal use.
+ * @param onSubmitted - Runs after a local submission is recorded.
+ */
 export function AskCeoForm({ compact = false, onSubmitted }: { compact?: boolean; onSubmitted?: () => void }) {
   const [submitted, setSubmitted] = useState(false)
 

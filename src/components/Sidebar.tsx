@@ -9,6 +9,7 @@ interface SidebarProps {
   onClose?: () => void
 }
 
+/** Renders primary navigation as either a fixed sidebar or a dismissible mobile drawer. */
 export function Sidebar({ mobile = false, open = false, onClose }: SidebarProps) {
   const links = (
     <nav aria-label="Primary navigation" className="space-y-1">

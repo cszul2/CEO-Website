@@ -10,9 +10,16 @@ interface ModalProps {
   size?: 'sm' | 'md' | 'lg'
 }
 
+/**
+ * Displays labeled dialog content and closes it through its backdrop or the Escape key.
+ *
+ * @param open - Controls whether the dialog is rendered.
+ * @param onClose - Handles every user-requested close action.
+ */
 export function Modal({ open, onClose, title, eyebrow, children, size = 'md' }: ModalProps) {
   useEffect(() => {
     if (!open) return
+    // Preserve the existing page-scroll setting while the dialog prevents background scrolling.
     const previousOverflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
     const handleKey = (event: KeyboardEvent) => {

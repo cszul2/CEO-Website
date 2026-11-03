@@ -3,6 +3,7 @@ import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'
 import { events } from '../data/content'
 
+/** Lists upcoming events and tracks locally saved selections for the current session. */
 export function EventsPage() {
   const [saved, setSaved] = useState<string[]>([])
 

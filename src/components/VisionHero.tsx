@@ -3,6 +3,7 @@ import { siteContent } from '../data/content'
 import { Icon } from './Icon'
 import { Modal } from './Modal'
 
+/** Presents the home-page vision statement and CEO message or video dialogs. */
 export function VisionHero() {
   const [messageOpen, setMessageOpen] = useState(false)
   const [videoOpen, setVideoOpen] = useState(false)

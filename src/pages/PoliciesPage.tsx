@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react'
 import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader } from '../components/PageHeader'
 
+/** Lifecycle states supplied by the policy API. */
 type PolicyStatus = 'Active' | 'Expiring soon' | 'Expired'
 
+/** A policy record returned by the local policy API. */
 interface PolicyRecord {
   id: string
   name: string
@@ -14,8 +16,15 @@ interface PolicyRecord {
   document_url: string
 }
 
+/** Status options available in the policy-register filter. */
 const statusFilters: Array<'All' | PolicyStatus> = ['All', 'Active', 'Expiring soon', 'Expired']
 
+/**
+ * Formats an ISO calendar date in UTC to avoid a viewer's time zone changing its day.
+ *
+ * @param value - A date in `YYYY-MM-DD` format.
+ * @returns A human-readable UTC date.
+ */
 function formatDate(value: string) {
   return new Intl.DateTimeFormat('en', {
     day: 'numeric',
@@ -25,10 +34,12 @@ function formatDate(value: string) {
   }).format(new Date(`${value}T00:00:00Z`))
 }
 
+/** Converts an API policy status into the corresponding status-chip CSS class. */
 function statusClass(status: PolicyStatus) {
   return `status-${status.toLowerCase().replace(' ', '-')}`
 }
 
+/** Fetches, filters, and displays policy records from the local API. */
 export function PoliciesPage() {
   const [query, setQuery] = useState('')
   const [status, setStatus] = useState<'All' | PolicyStatus>('All')
@@ -39,6 +50,7 @@ export function PoliciesPage() {
 
   useEffect(() => {
     const controller = new AbortController()
+    // Debounce filter changes so rapid typing does not issue a request per keystroke.
     const requestDelay = window.setTimeout(async () => {
       const parameters = new URLSearchParams()
       if (query.trim()) parameters.set('q', query.trim())
@@ -66,6 +78,7 @@ export function PoliciesPage() {
     }, 200)
 
     return () => {
+      // Cancel both the scheduled and active requests when inputs change or the page unmounts.
       window.clearTimeout(requestDelay)
       controller.abort()
     }

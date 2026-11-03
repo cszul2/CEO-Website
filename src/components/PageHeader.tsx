@@ -8,6 +8,7 @@ interface PageHeaderProps {
   children?: ReactNode
 }
 
+/** Renders the reusable title area for an interior page. */
 export function PageHeader({ title, description, children }: PageHeaderProps) {
   return (
     <header className="page-header">
@@ -22,10 +23,12 @@ export function PageHeader({ title, description, children }: PageHeaderProps) {
   )
 }
 
+/** Constrains an interior page to the shared content width and spacing. */
 export function InteriorLayout({ children }: { children: ReactNode }) {
   return <div className="interior-page">{children}</div>
 }
 
+/** Renders a consistent heading and optional supporting copy for a section. */
 export function SectionHeading({ eyebrow, title, text }: { eyebrow?: string; title: string; text?: string }) {
   return (
     <div className="mb-5">

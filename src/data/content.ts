@@ -1,11 +1,14 @@
+/** Supported accent names used to select a component's visual treatment. */
 export type Accent = 'violet' | 'blue' | 'teal' | 'green' | 'amber' | 'rose'
 
+/** A destination displayed in the primary navigation. */
 export interface NavItem {
   label: string
   path: string
   icon: string
 }
 
+/** A leadership update that can appear in feeds and search results. */
 export interface UpdateItem {
   id: string
   title: string
@@ -16,6 +19,7 @@ export interface UpdateItem {
   accent: Accent
 }
 
+/** Shared copy for the site identity and CEO-message experience. */
 export const siteContent = {
   title: 'Office of the CEO',
   heroEyebrow: 'A Message from the CEO',
@@ -32,6 +36,7 @@ export const siteContent = {
   },
 }
 
+/** Ordered navigation entries used by the desktop and mobile sidebars. */
 export const navigation: NavItem[] = [
   { label: 'Home', path: '/', icon: 'home' },
   { label: 'Vision', path: '/vision', icon: 'target' },
@@ -46,6 +51,7 @@ export const navigation: NavItem[] = [
   { label: 'Resources', path: '/resources', icon: 'folder' },
 ]
 
+/** Featured destinations displayed on the home page. */
 export const homeCards = [
   {
     title: 'Vision & Principles',
@@ -91,6 +97,7 @@ export const homeCards = [
   },
 ]
 
+/** Leadership communications shown in the updates feed. */
 export const updates: UpdateItem[] = [
   {
     id: 'progress-priorities',
@@ -135,6 +142,7 @@ export const updates: UpdateItem[] = [
   },
 ]
 
+/** Company principles presented on the Vision page. */
 export const principles = [
   { title: 'Start with people', text: 'Understand the people we serve and design every decision around meaningful outcomes.', icon: 'heart' },
   { title: 'Make it clear', text: 'Choose focus over complexity. Explain what matters, why it matters, and what happens next.', icon: 'sparkles' },
@@ -142,6 +150,7 @@ export const principles = [
   { title: 'Build together', text: 'Invite different perspectives early and turn shared context into shared momentum.', icon: 'users' },
 ]
 
+/** Strategic pillars that organize enterprise priorities. */
 export const strategies = [
   { number: '01', title: 'Earn customer trust', text: 'Deliver simpler, more reliable experiences and use customer insight to guide investment.', accent: 'violet' as Accent },
   { number: '02', title: 'Grow with focus', text: 'Concentrate resources on the markets and capabilities where we can create distinct value.', accent: 'blue' as Accent },
@@ -149,6 +158,7 @@ export const strategies = [
   { number: '04', title: 'Invest in our people', text: 'Build leadership depth, critical skills, and an inclusive culture where teams can thrive.', accent: 'green' as Accent },
 ]
 
+/** Chronological phases of the enterprise roadmap. */
 export const roadmap = [
   { period: 'Now · Q4 2026', title: 'Align and simplify', text: 'Confirm outcomes, clarify ownership, and retire work that no longer serves the strategy.', status: 'In progress' },
   { period: 'Next · H1 2027', title: 'Build the foundation', text: 'Launch priority capabilities, modernize core workflows, and establish shared measures.', status: 'Planned' },
@@ -156,6 +166,7 @@ export const roadmap = [
   { period: 'Beyond · 2028', title: 'Lead the next chapter', text: 'Turn new capabilities into durable differentiation and broader positive impact.', status: 'Horizon' },
 ]
 
+/** Sample policy metadata retained for content references. */
 export const policies = [
   { title: 'Flexible Work Guidelines', category: 'People', updated: 'Oct 14, 2026', summary: 'Principles and practical guidance for effective hybrid work.' },
   { title: 'Information Handling Standard', category: 'Security', updated: 'Sep 19, 2026', summary: 'How to classify, share, and protect company information.' },
@@ -165,12 +176,14 @@ export const policies = [
   { title: 'Supplier Engagement Principles', category: 'Finance', updated: 'Jul 12, 2026', summary: 'Consistent standards for choosing and working with external suppliers.' },
 ]
 
+/** Upcoming company events available to save locally. */
 export const events = [
   { day: '12', month: 'NOV', title: 'Company Town Hall', time: '10:00–11:00 AM UTC', format: 'Live stream', description: 'Quarterly business update and open Q&A with the CEO and leadership team.' },
   { day: '19', month: 'NOV', title: 'Strategy in Practice', time: '3:00–3:45 PM UTC', format: 'Virtual session', description: 'A practical look at how teams are turning the strategic pillars into decisions.' },
   { day: '03', month: 'DEC', title: 'Ask Me Anything', time: '4:00–4:45 PM UTC', format: 'Hybrid', description: 'An informal conversation with company leaders, guided by employee questions.' },
 ]
 
+/** Portfolio-level summaries of priority initiatives. */
 export const projects = [
   { title: 'Customer Experience Reset', owner: 'Customer Council', progress: 72, status: 'On track', text: 'Simplifying the end-to-end customer journey across products and channels.' },
   { title: 'Digital Core', owner: 'Technology & Operations', progress: 48, status: 'On track', text: 'Modernizing shared platforms, data foundations, and essential workflows.' },
@@ -178,6 +191,7 @@ export const projects = [
   { title: 'Sustainable Growth', owner: 'Impact Council', progress: 36, status: 'On track', text: 'Embedding environmental and community outcomes into business planning.' },
 ]
 
+/** Sample Office of the CEO team roster. */
 export const team = [
   { initials: 'AR', name: 'Alex Rivera', role: 'Chief Executive Officer', focus: 'Company direction and culture', accent: 'violet' as Accent },
   { initials: 'MC', name: 'Morgan Chen', role: 'Chief of Staff', focus: 'Executive priorities and operating rhythm', accent: 'blue' as Accent },
@@ -187,6 +201,7 @@ export const team = [
   { initials: 'TM', name: 'Taylor Morgan', role: 'Operations Partner', focus: 'Office operations and team coordination', accent: 'amber' as Accent },
 ]
 
+/** Curated materials grouped by their intended audience or purpose. */
 export const resources = [
   { title: 'Strategy Toolkit', category: 'Strategy', text: 'Templates for connecting team plans, measures, and tradeoffs to company priorities.', icon: 'briefcase' },
   { title: 'Leadership Updates', category: 'Communications', text: 'Presentation materials and recordings from recent company leadership forums.', icon: 'presentation' },
@@ -196,12 +211,19 @@ export const resources = [
   { title: 'Operating Calendar', category: 'Company', text: 'Company-wide planning, reporting, event, and decision milestones.', icon: 'calendar' },
 ]
 
+/** Answers that explain the prototype's question-submission experience. */
 export const faqs = [
   { question: 'How are employee questions selected?', answer: 'Questions are grouped by theme and selected to represent topics that matter across the company. Repeated themes may be answered in an update or town hall.' },
   { question: 'Can I submit anonymously?', answer: 'This prototype does not transmit or retain submissions. A production version could support anonymous or attributed submissions based on company policy.' },
   { question: 'When will I receive a response?', answer: 'In a production workflow, the Office of the CEO would publish service expectations and identify whether a response will be direct or shared company-wide.' },
 ]
 
+/**
+ * Flattened search entries derived from navigable and editorial content.
+ *
+ * @remarks
+ * Keeping this derived data here ensures the header search reflects the source collections.
+ */
 export const searchIndex = [
   ...navigation.slice(1).map((item) => ({ title: item.label, text: `Explore ${item.label.toLowerCase()} information`, path: item.path, type: 'Page' })),
   ...updates.map((item) => ({ title: item.title, text: item.summary, path: `/updates#${item.id}`, type: item.type })),

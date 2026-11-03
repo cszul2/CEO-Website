@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Icon } from '../components/Icon'
 
+/** Provides a recovery path when no route matches the requested URL. */
 export function NotFoundPage() {
   return (
     <div className="flex min-h-[calc(100vh-72px)] items-center justify-center px-5 py-16 text-center">

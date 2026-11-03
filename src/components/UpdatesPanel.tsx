@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { updates } from '../data/content'
 import { Icon } from './Icon'
 
+/** Shows the three newest leadership updates in a standalone or embedded panel. */
 export function UpdatesPanel({ embedded = false }: { embedded?: boolean }) {
   return (
     <aside className={embedded ? '' : 'updates-panel'} aria-labelledby="updates-heading">

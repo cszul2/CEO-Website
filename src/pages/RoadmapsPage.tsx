@@ -1,6 +1,7 @@
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'
 import { roadmap } from '../data/content'
 
+/** Presents the enterprise roadmap as ordered phases. */
 export function RoadmapsPage() {
   return (
     <InteriorLayout>

@@ -2,6 +2,7 @@ import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'
 import { projects } from '../data/content'
 
+/** Displays the portfolio view of strategic initiatives and their sample progress. */
 export function ProjectsPage() {
   return (
     <InteriorLayout>

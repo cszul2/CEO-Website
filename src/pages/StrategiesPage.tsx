@@ -2,6 +2,7 @@ import { Icon } from '../components/Icon'
 import { InteriorLayout, PageHeader, SectionHeading } from '../components/PageHeader'
 import { strategies } from '../data/content'
 
+/** Presents the strategic pillars and their shared outcome areas. */
 export function StrategiesPage() {
   return (
     <InteriorLayout>
